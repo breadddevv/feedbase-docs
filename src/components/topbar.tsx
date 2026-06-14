@@ -57,7 +57,6 @@ export function SiteHeader() {
               className="flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               <FaDiscord className="size-4" />
-              Communications Server
             </a>
             <a
               href="https://github.com/breadddevv/feedbase"
@@ -66,7 +65,6 @@ export function SiteHeader() {
               className="flex items-center gap-1.5 text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               <TbBrandGithubFilled className="size-4" />
-              GitHub
             </a>
             <a
               href="https://github.com/breadddevv/feedbase"

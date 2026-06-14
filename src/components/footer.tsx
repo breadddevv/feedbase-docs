@@ -21,7 +21,7 @@ const footerLinks = {
     { name: "Releases", href: `${GITHUB_URL}/releases`, external: true },
   ],
   community: [
-    { name: "Discord", href: "/discord", disabled: true },
+    { name: "Discord", href: "https://discord.gg/aYYFyfJSJC" },
     { name: "X / Twitter", href: "https://x.com/feedbase", external: true, disabled: true },
     { name: "Blog", href: "/blog", disabled: true },
     { name: "Support", href: "/support", disabled: true },
