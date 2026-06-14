@@ -111,7 +111,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                         >
                           <Img
                             src="https://feedbase.breaddevv.cc/logo.png"
-                            width="38"
+                            width="34"
                             height="28"
                             alt="Feedbase"
                             style={{ display: "block" }}
