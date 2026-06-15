@@ -323,7 +323,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                           }}
                         >
                           <Link
-                            href="https://github.com/breaddevv/feedbase"
+                            href="https://github.com/breadddevv/feedbase"
                             style={{
                               backgroundColor: brand,
                               color: "#ffffff",
@@ -424,7 +424,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                     href="mailto:hello@feedbase.breaddevv.cc"
                     style={{ color: brand, textDecoration: "none" }}
                   >
-                    hello@feedbase.breaddevv.cc
+                    hello@breaddevv.cc
                   </Link>
                 </Text>
                 <Text
