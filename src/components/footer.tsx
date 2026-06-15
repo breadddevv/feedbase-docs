@@ -29,7 +29,7 @@ const footerLinks = {
   legal: [
     { name: "Privacy policy", href: "/privacy" },
     { name: "Terms of service", href: "/terms" },
-    { name: "MIT license", href: `${GITHUB_URL}/blob/main/LICENSE.TXT`, external: true },
+    { name: "MIT license", href: `${GITHUB_URL}/blob/main/LICENSE`, external: true },
   ],
 };
 
