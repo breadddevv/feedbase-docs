@@ -127,4 +127,12 @@
   html {
     @apply font-sans;
   }
+  ::selection {
+    background-color: oklch(0.7 0.2 350 / 0.5);
+    color: oklch(1 0 0);
+  }
+  ::-moz-selection {
+    background-color: oklch(0.7 0.2 350 / 0.5);
+    color: oklch(1 0 0);
+  }
 }

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/topbar";
 import { Footer } from "@/components/footer";
@@ -14,12 +14,20 @@ const firaCode = JetBrains_Mono({
   subsets: ["latin"],
 });
 
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-handwriting",
+  weight: "400",
+  style: "italic",
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://feedbase.breaddevv.cc'),
   title: {
     default: "Feedbase",
     template: "%s | Feedbase"
   },
+  icons: [{ rel: 'icon', url: '/fb.png' }],
   description: "Listen, learn, and grow with your users. The open-source feedback platform built for modern product teams.",
   openGraph: {
     title: 'Feedbase',
@@ -50,7 +58,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${firaCode.variable} h-full antialiased`}
+      className={`${inter.variable} ${firaCode.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
       <meta content="#ff2b87" data-react-helmet="true" name="theme-color" />
       <body className="min-h-full flex flex-col">

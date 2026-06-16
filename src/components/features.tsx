@@ -129,7 +129,7 @@ export function Features() {
       <div className="mx-auto max-w-2xl text-center">
         <p className="text-sm font-medium text-primary">Everything included</p>
         <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-          A complete <span className="gap-1 bg-primary/20 p-1 rounded-lg leading-14">feedback platform</span>,<br/><span className="text-white/25">not a widget.</span>
+          A complete <span className="gap-1 bg-primary/20 p-1 rounded-lg leading-14" style={{ fontFamily: "var(--font-handwriting), cursive" }}>feedback platform</span>,<br/><span className="text-white/25">not a widget.</span>
         </h2>
         <p className="mt-4 text-pretty text-muted-foreground">
           Boards, roadmaps, changelogs and integrations — open source and
