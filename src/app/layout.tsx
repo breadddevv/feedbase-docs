@@ -15,19 +15,32 @@ const firaCode = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Feedbase",
-  description: "Open source feedback management platform for product teams.",
+  metadataBase: new URL('https://feedbase.breaddevv.cc'),
+  title: {
+    default: "Feedbase",
+    template: "%s | Feedbase"
+  },
+  description: "Listen, learn, and grow with your users. The open-source feedback platform built for modern product teams.",
   openGraph: {
     title: 'Feedbase',
     description: 'Open source feedback management platform for product teams.',
+    url: 'https://feedbase.breaddevv.cc',
+    siteName: 'Feedbase',
     images: [
       {
-        url: 'https://feedbase.breaddevv.cc/landing.png',
+        url: '/landing.png',
         width: 1920,
         height: 1080,
-        alt: 'Feedbase',
+        alt: 'Feedbase Landing Page',
       },
     ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Feedbase',
+    description: 'Open source feedback management platform for product teams.',
+    images: ['/landing.png'],
   },
 };
 
