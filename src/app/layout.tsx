@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/topbar";
 import { Footer } from "@/components/footer";
@@ -11,6 +11,13 @@ const inter = Inter({
 
 const firaCode = JetBrains_Mono({
   variable: "--font-fira",
+  subsets: ["latin"],
+});
+
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-handwriting",
+  weight: "400",
+  style: "italic",
   subsets: ["latin"],
 });
 
@@ -51,7 +58,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${firaCode.variable} h-full antialiased`}
+      className={`${inter.variable} ${firaCode.variable} ${instrumentSerif.variable} h-full antialiased`}
     >
       <meta content="#ff2b87" data-react-helmet="true" name="theme-color" />
       <body className="min-h-full flex flex-col">
