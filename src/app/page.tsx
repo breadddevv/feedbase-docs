@@ -16,7 +16,7 @@ export default function Page() {
   return (
     <div className="min-h-screen text-foreground">
       <main>
-        <WaitlistModal open={waitlistopen} onClose={() => setWaitlistOpen(true)}  />
+        <WaitlistModal open={waitlistopen} onClose={() => setWaitlistOpen(false)}  />
         <Hero waitlistmodal={() => setWaitlistOpen(true)} />
         <Stats />
         <Features />

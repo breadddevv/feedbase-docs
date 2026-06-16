@@ -25,6 +25,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
         <meta name="color-scheme" content="light dark" />
         <meta name="supported-color-schemes" content="light dark" />
         <style>{`
+          @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
           :root { color-scheme: light dark; }
           body { margin: 0; padding: 0; }
 
@@ -38,7 +39,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
           .pill-wrap { background-color: #fff0f7; border: 1px solid #ffd6ec; }
           .pill-dot  { background-color: ${brand}; }
           .pill-text { color: ${brand}; }
-          .feature-card { background-color: #ffffff; border: 1px solid #e4e4e7; }
+          .feature-card { background-color: #ffffff; border: 1px dashed #e4e4e7; }
           .feature-title { color: #0d0d0d; }
           .cta-block { background-color: #0d0d0d; }
           .cta-title { color: #ffffff; }
@@ -76,7 +77,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
           margin: 0,
           padding: 0,
           fontFamily:
-            '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+            'Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
         }}
       >
         <div
@@ -99,39 +100,27 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                 className="header"
                 style={{ backgroundColor: "#0d0d0d", padding: "24px 32px" }}
               >
-                <Link href="https://feedbase.breaddevv.cc">
-                  <table role="presentation" cellPadding="0" cellSpacing="0">
-                    <tbody>
-                      <tr>
-                        <td
-                          style={{
-                            verticalAlign: "middle",
-                            paddingRight: "10px",
-                          }}
-                        >
-                          <Img
-                            src="https://feedbase.breaddevv.cc/logo.png"
-                            width="34"
-                            height="28"
-                            alt="Feedbase"
-                            style={{ display: "block" }}
-                          />
-                        </td>
-                        <td style={{ verticalAlign: "middle" }}>
-                          <span
-                            style={{
-                              color: "#ffffff",
-                              fontSize: "15px",
-                              fontWeight: 600,
-                              letterSpacing: "-0.02em",
-                            }}
-                          >
-                            Feedbase
-                          </span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <Link
+                  href="https://feedbase.breaddevv.cc"
+                  style={{ display: "flex", alignItems: "center", textDecoration: "none" }}
+                >
+                  <Img
+                    src="https://feedbase.breaddevv.cc/logo.png"
+                    width="34"
+                    height="28"
+                    alt="Feedbase"
+                    style={{ display: "block", marginRight: "10px" }}
+                  />
+                  <span
+                    style={{
+                      color: "#ffffff",
+                      fontSize: "21px",
+                      fontWeight: 700,
+                      letterSpacing: "-0.02em",
+                    }}
+                  >
+                    Feedbase
+                  </span>
                 </Link>
               </div>
 
@@ -141,51 +130,37 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                 <div
                   className="pill-wrap"
                   style={{
-                    display: "inline-block",
+                    display: "inline-flex",
+                    alignItems: "center",
                     backgroundColor: "#fff0f7",
-                    border: `1px solid #ffd6ec`,
+                    border: `1px dashed #ffd6ec`,
                     borderRadius: "100px",
                     padding: "4px 12px",
                     marginBottom: "20px",
                   }}
                 >
-                  <table role="presentation" cellPadding="0" cellSpacing="0">
-                    <tbody>
-                      <tr>
-                        <td
-                          style={{
-                            verticalAlign: "middle",
-                            paddingRight: "6px",
-                          }}
-                        >
-                          <div
-                            className="pill-dot"
-                            style={{
-                              width: "6px",
-                              height: "6px",
-                              borderRadius: "50%",
-                              backgroundColor: brand,
-                              display: "inline-block",
-                            }}
-                          />
-                        </td>
-                        <td style={{ verticalAlign: "middle" }}>
-                          <span
-                            className="pill-text"
-                            style={{
-                              fontSize: "11px",
-                              fontWeight: 500,
-                              color: brand,
-                              letterSpacing: "0.04em",
-                              textTransform: "uppercase",
-                            }}
-                          >
-                            You're on the list
-                          </span>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div
+                    className="pill-dot"
+                    style={{
+                      width: "6px",
+                      height: "6px",
+                      borderRadius: "50%",
+                      backgroundColor: brand,
+                      marginRight: "6px",
+                    }}
+                  />
+                  <span
+                    className="pill-text"
+                    style={{
+                      fontSize: "11px",
+                      fontWeight: 500,
+                      color: brand,
+                      letterSpacing: "0.04em",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    You're on the list
+                  </span>
                 </div>
 
                 {/* Heading */}
@@ -194,7 +169,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                   style={{
                     color: "#0d0d0d",
                     fontSize: "24px",
-                    fontWeight: 700,
+                    fontWeight: 500,
                     letterSpacing: "-0.04em",
                     lineHeight: "1.2",
                     margin: "0 0 16px",
@@ -234,8 +209,15 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                 {/* Feature cards */}
                 <Row style={{ marginBottom: "28px" }}>
                   {[
-                    { icon: "💬", title: "Widgets", sub: "Embed anywhere" },
-                    { icon: "🗺️", title: "Roadmaps", sub: "Public or private" },
+                    { icon: "💬", 
+                      title: "Widgets", sub: 
+                      "Embed anywhere" 
+                    },
+                    { 
+                      icon: "🗺️", 
+                      title: "Roadmaps", 
+                      sub: "Public or private" 
+                    },
                     {
                       icon: "📋",
                       title: "Changelog",
@@ -247,7 +229,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                         className="feature-card"
                         style={{
                           backgroundColor: "#ffffff",
-                          border: "1px solid #e4e4e7",
+                          border: "1px dashed #e4e4e7",
                           borderRadius: "10px",
                           padding: "12px 14px",
                           marginRight: "8px",
@@ -286,61 +268,52 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                     borderRadius: "12px",
                     padding: "20px",
                     marginBottom: "20px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
                   }}
                 >
-                  <table role="presentation" width="100%" cellPadding="0" cellSpacing="0">
-                    <tbody>
-                      <tr>
-                        <td style={{ verticalAlign: "middle" }}>
-                          <div
-                            className="cta-title"
-                            style={{
-                              fontSize: "13px",
-                              fontWeight: 600,
-                              color: "#ffffff",
-                              marginBottom: "4px",
-                            }}
-                          >
-                            Star us on GitHub
-                          </div>
-                          <div
-                            className="muted"
-                            style={{
-                              fontSize: "12px",
-                              color: "#71717a",
-                              lineHeight: "1.5",
-                            }}
-                          >
-                            Free &amp; open-source, forever. Help others find
-                            Feedbase.
-                          </div>
-                        </td>
-                        <td
-                          style={{
-                            verticalAlign: "middle",
-                            paddingLeft: "16px",
-                            whiteSpace: "nowrap",
-                          }}
-                        >
-                          <Link
-                            href="https://github.com/breadddevv/feedbase"
-                            style={{
-                              backgroundColor: brand,
-                              color: "#ffffff",
-                              fontSize: "12px",
-                              fontWeight: 600,
-                              textDecoration: "none",
-                              padding: "8px 16px",
-                              borderRadius: "8px",
-                              display: "inline-block",
-                            }}
-                          >
-                            ⭐ Star
-                          </Link>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div>
+                    <div
+                      className="cta-title"
+                      style={{
+                        fontSize: "13px",
+                        fontWeight: 600,
+                        color: "#ffffff",
+                        marginBottom: "4px",
+                      }}
+                    >
+                      Star us on GitHub
+                    </div>
+                    <div
+                      className="muted"
+                      style={{
+                        fontSize: "12px",
+                        color: "#71717a",
+                        lineHeight: "1.5",
+                      }}
+                    >
+                      Free &amp; open-source, forever. Help others find
+                      Feedbase.
+                    </div>
+                  </div>
+                  <div style={{ flexShrink: 0, marginLeft: "16px" }}>
+                    <Link
+                      href="https://github.com/breadddevv/feedbase"
+                      style={{
+                        backgroundColor: brand,
+                        color: "#ffffff",
+                        fontSize: "12px",
+                        fontWeight: 600,
+                        textDecoration: "none",
+                        padding: "8px 16px",
+                        borderRadius: "8px",
+                        display: "inline-block",
+                      }}
+                    >
+                      ⭐ Star
+                    </Link>
+                  </div>
                 </div>
 
                 {/* Also includes */}
@@ -363,41 +336,30 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                   >
                     Also includes
                   </div>
-                  <table role="presentation" cellPadding="0" cellSpacing="0">
-                    <tbody>
-                      <tr>
-                        {[
-                          "GitHub integration",
-                          "Slack alerts",
-                          "Self-hosted",
-                          "SSO",
-                        ].map((t) => (
-                          <td
-                            key={t}
-                            style={{
-                              paddingRight: "6px",
-                              paddingBottom: "6px",
-                            }}
-                          >
-                            <div
-                              className="tag"
-                              style={{
-                                backgroundColor: "#ffffff",
-                                border: "1px solid #e4e4e7",
-                                borderRadius: "6px",
-                                padding: "3px 10px",
-                                fontSize: "11px",
-                                color: "#52525b",
-                                whiteSpace: "nowrap",
-                              }}
-                            >
-                              {t}
-                            </div>
-                          </td>
-                        ))}
-                      </tr>
-                    </tbody>
-                  </table>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: "6px" }}>
+                    {[
+                      "GitHub integration",
+                      "Slack alerts",
+                      "Self-hosted",
+                      "SSO",
+                    ].map((t) => (
+                      <div
+                        key={t}
+                        className="tag"
+                        style={{
+                          backgroundColor: "#ffffff",
+                          border: "1px solid #e4e4e7",
+                          borderRadius: "6px",
+                          padding: "3px 10px",
+                          fontSize: "11px",
+                          color: "#52525b",
+                          whiteSpace: "nowrap",
+                        }}
+                      >
+                        {t}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
 
@@ -421,7 +383,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                 >
                   Questions?{" "}
                   <Link
-                    href="mailto:hello@feedbase.breaddevv.cc"
+                    href="mailto:hello@breaddevv.cc"
                     style={{ color: brand, textDecoration: "none" }}
                   >
                     hello@breaddevv.cc
@@ -506,7 +468,7 @@ export const WaitlistConfirmation = ({ email }: WaitlistConfirmationProps) => {
                   margin: 0,
                 }}
               >
-                Built in Portugal with ☕ — Feedbase Team 🇵🇹
+                Made with ☕ & 🍀 | Feedbase Team 🇵🇹
               </Text>
             </Section>
           </Container>

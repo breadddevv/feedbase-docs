@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Fira_Code } from "next/font/google";
+import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/topbar";
 import { Footer } from "@/components/footer";
@@ -9,7 +9,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const firaCode = Fira_Code({
+const firaCode = JetBrains_Mono({
   variable: "--font-fira",
   subsets: ["latin"],
 });

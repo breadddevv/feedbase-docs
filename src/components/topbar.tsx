@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, ArrowRight, Moon, Sun } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaDiscord } from "react-icons/fa6";

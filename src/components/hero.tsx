@@ -39,7 +39,7 @@ export function Hero({ waitlistmodal }: Readonly<WaitlistProps>) {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400" />
               <span className="relative inline-flex size-1.5 rounded-full bg-green-400" />
             </span>
-            Early Access
+            Waitlist Available
             <ArrowRight className="size-3" />
           </a>
           <h1 className="text-foreground/90 text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl">

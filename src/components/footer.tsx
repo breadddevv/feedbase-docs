@@ -40,7 +40,7 @@ type FooterLink = {
   disabled?: boolean;
 };
 
-function FooterLink({ link }: { link: FooterLink }) {
+function FooterLink({ link }: Readonly<{ link: FooterLink }>) {
   if (link.disabled) {
     return (
       <span className="inline-flex items-center gap-1 text-sm text-muted-foreground/35 cursor-not-allowed select-none">
