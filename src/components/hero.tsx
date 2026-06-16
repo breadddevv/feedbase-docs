@@ -56,7 +56,7 @@ export function Hero({ waitlistmodal }: Readonly<WaitlistProps>) {
               className="px-5 py-3 rounded-xl bg-primary/90 cursor-pointer font-semibold flex gap-2 justify-center text-primary-foreground hover:bg-primary transition-colors"
               onClick={waitlistmodal}
             >
-              Join our waitlist <MailIcon />
+              Join our waitlist <MailIcon className="size-4 my-auto" />
             </button>
             <button className="gap-2 bg-white/5 backdrop-blur-lg cursor-pointer text-foreground flex px-5 py-3 rounded-xl hover:backdrop-blur-2xl transition-all border border-border hover:border-white/25 hover:bg-white/10">
               <TbBrandGithubFilled className="size-4 my-auto" />

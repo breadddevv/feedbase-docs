@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Instrument_Serif } from "next/font/google";
+import { Inter, JetBrains_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/topbar";
 import { Footer } from "@/components/footer";
@@ -14,10 +14,9 @@ const firaCode = JetBrains_Mono({
   subsets: ["latin"],
 });
 
-const instrumentSerif = Instrument_Serif({
+const instrumentSerif = Caveat({
   variable: "--font-handwriting",
   weight: "400",
-  style: "italic",
   subsets: ["latin"],
 });
 

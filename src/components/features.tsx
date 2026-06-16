@@ -142,7 +142,7 @@ export function Features() {
           <div
             key={feature.title}
             className={cn(
-              "group bg-card p-6 border border-border transition-colors hover:bg-primary/1",
+              "group bg-white/1 p-6 border border-border transition-colors hover:bg-primary/1",
               feature.className,
             )}
           >

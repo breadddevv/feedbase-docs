@@ -11,8 +11,8 @@ const footerLinks = {
   product: [
     { name: "Features", href: "#features" },
     { name: "Roadmap", href: "#roadmap" },
-    { name: "Changelog", href: "#changelog" },
-    { name: "Self-hosting", href: "#self-hosting" },
+    { name: "FAQ", href: "#faq" },
+    { name: "Self-hosting", href: "#self-host" },
   ],
   developers: [
     { name: "Documentation", href: "/docs", disabled: true },

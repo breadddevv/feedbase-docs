@@ -79,7 +79,7 @@ export function WaitlistModal({ open, onClose }: Readonly<WaitlistModalProps>) {
             <div className="relative p-6 sm:p-8">
               <button
                 onClick={handleClose}
-                className="absolute right-4 top-4 rounded-lg p-1.5 text-muted-foreground transition-colors hover:bg-secondary hover:text-foreground"
+                className="absolute right-4 top-4 rounded-lg p-1.5 text-muted-foreground transition-colors hover:bg-white/5 hover:text-foreground cursor-pointer"
               >
                 <X className="size-4" />
               </button>
