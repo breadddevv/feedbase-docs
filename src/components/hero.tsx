@@ -3,6 +3,7 @@ import { BoardMockup } from "@/components/board-mockup";
 import { ArrowRight, CopyIcon, CheckIcon, MailIcon } from "lucide-react";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 interface WaitlistProps {
   waitlistmodal: () => void;
@@ -58,9 +59,11 @@ export function Hero({ waitlistmodal }: Readonly<WaitlistProps>) {
             >
               Join our waitlist <MailIcon className="size-4 my-auto" />
             </button>
-            <button className="gap-2 bg-white/5 backdrop-blur-lg cursor-pointer text-foreground flex px-5 py-3 rounded-xl hover:backdrop-blur-2xl transition-all border border-border hover:border-white/25 hover:bg-white/10">
-              <TbBrandGithubFilled className="size-4 my-auto" />
-              Star on GitHub
+            <button className="bg-white/5 backdrop-blur-lg cursor-pointer text-foreground px-5 py-3 rounded-xl hover:backdrop-blur-2xl transition-all border border-border hover:border-white/25 hover:bg-white/10">
+              <Link href="https://github.com/breadddevv/feedbase" className="flex gap-1.5">
+                <TbBrandGithubFilled className="size-4 my-auto" />
+                Star on GitHub
+              </Link>
             </button>
           </div>
           <div className="hidden mt-6 md:flex items-center gap-3 rounded-lg border border-border bg-card/80 backdrop-blur-2xl px-4 py-2.5 font-mono text-sm">
