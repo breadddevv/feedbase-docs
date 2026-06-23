@@ -36,9 +36,9 @@ export function SelfHost() {
 
           <ul className="mt-8 flex flex-col gap-5">
             {points.map((p) => (
-              <li key={p.title} className="flex gap-4">
-                <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <p.icon className="size-5" />
+              <li key={p.title} className="flex gap-4 group">
+                <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary transition-colors">
+                  <p.icon className="size-5 group-hover:text-white" />
                 </span>
                 <div>
                   <p className="font-medium">{p.title}</p>
@@ -52,7 +52,7 @@ export function SelfHost() {
             {stack.map((s) => (
               <span
                 key={s}
-                className="rounded-full border border-border bg-secondary/50 px-3 py-1 text-xs text-muted-foreground"
+                className="rounded-sm border border-border bg-secondary/50 px-3 py-1 text-xs text-muted-foreground"
               >
                 {s}
               </span>

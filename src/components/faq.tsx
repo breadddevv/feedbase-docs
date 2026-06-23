@@ -25,6 +25,21 @@ const faqs = [
     q: "Does it integrate with Discord?",
     a: "Yes — webhooks fire on new posts and you can update suggestion statuses with slash commands directly from Discord. Slack and GitHub Issues sync are on the roadmap.",
   },
+  {
+    q: "Is there a hosted version if I don't want to self-host?",
+    a: "Not currently. Feedbase is built self-host first, so the only requirement is a server and a Postgres database. A managed option may come later, but self-hosting will always stay free.",
+  },
+  {
+    q: "How do roles and permissions work?",
+    a: "Roles are set up during first startup with sensible defaults — Owner, Admin, Member and Viewer. After that, you can fully customize them: rename roles, tweak their permissions, and give each one its own icon and color to match your brand.",  },
+  {
+    q: "Can users sign in with their existing accounts?",
+    a: "Yes, Feedbase supports OAuth providers like GitHub and Google, plus email/password, so you can pick whatever fits your community best.",
+  },
+  {
+    q: "What kind of support is available?",
+    a: "Community support happens in our Discord server, and the GitHub repo is the place for bug reports and feature requests. There's no paid support tier — the project is run in the open.",
+  },
 ]
 
 export function Faq() {

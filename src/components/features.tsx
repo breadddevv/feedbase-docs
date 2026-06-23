@@ -8,16 +8,16 @@ import {
   ShieldCheck,
   UnlockIcon,
   Webhook,
-} from "lucide-react"
-import type { LucideIcon } from "lucide-react"
-import { cn } from "@/lib/utils"
+} from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 type Feature = {
-  icon: LucideIcon
-  title: string
-  description: string
-  className?: string
-}
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  className?: string;
+};
 
 const features: Feature[] = [
   {
@@ -30,14 +30,12 @@ const features: Feature[] = [
   {
     icon: KanbanSquare,
     title: "Public roadmap",
-    description:
-      "A kanban-style roadmap your users can follow in real time.",
+    description: "A kanban-style roadmap your users can follow in real time.",
   },
   {
     icon: ScrollText,
     title: "Changelog",
-    description:
-      "Publish release notes tied to the suggestions you shipped.",
+    description: "Publish release notes tied to the suggestions you shipped.",
   },
   {
     icon: Webhook,
@@ -49,14 +47,12 @@ const features: Feature[] = [
   {
     icon: Bell,
     title: "Email notifications",
-    description:
-      "Notify every voter the moment a suggestion changes status.",
+    description: "Notify every voter the moment a suggestion changes status.",
   },
   {
     icon: ShieldCheck,
     title: "Roles & permissions",
-    description:
-      "Owner, Admin, Member and Viewer roles with an admin panel.",
+    description: "Owner, Admin, Member and Viewer roles with an admin panel.",
   },
   {
     icon: MessageCircle,
@@ -67,9 +63,8 @@ const features: Feature[] = [
   {
     icon: GitBranch,
     title: "MIT licensed",
-    description:
-      "Fork it, modify it, ship it. The whole thing is yours.",
-      className: "md:col-span-2",
+    description: "Fork it, modify it, ship it. The whole thing is yours.",
+    className: "md:col-span-2",
   },
   {
     icon: UnlockIcon,
@@ -111,8 +106,7 @@ const features: Feature[] = [
   {
     icon: ScrollText,
     title: "Data portability",
-    description:
-      "Import from other platforms and export whenever you need.",
+    description: "Import from other platforms and export whenever you need.",
   },
   {
     icon: Bell,
@@ -121,7 +115,7 @@ const features: Feature[] = [
       "Choose between public communities, private workspaces or invite-only access.",
     className: "md:col-span-2",
   },
-]
+];
 
 export function Features() {
   return (
@@ -129,7 +123,15 @@ export function Features() {
       <div className="mx-auto max-w-2xl text-center">
         <p className="text-sm font-medium text-primary">Everything included</p>
         <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-          A complete <span className="gap-1 bg-primary/20 p-1 rounded-lg leading-14" style={{ fontFamily: "var(--font-handwriting), cursive" }}>feedback platform</span>,<br/><span className="text-white/25">not a widget.</span>
+          A complete{" "}
+          <span
+            className="gap-1 bg-primary/20 p-1 rounded-lg leading-14"
+            style={{ fontFamily: "var(--font-handwriting), cursive" }}
+          >
+            feedback platform
+          </span>
+          ,<br />
+          <span className="text-white/25">not a widget.</span>
         </h2>
         <p className="mt-4 text-pretty text-muted-foreground">
           Boards, roadmaps, changelogs and integrations — open source and
@@ -137,12 +139,12 @@ export function Features() {
         </p>
       </div>
 
-      <div className="mt-14 grid sm:grid-cols-2 md:grid-cols-3 rounded-[48] divide-x divide-y border border-border overflow-hidden">
+      <div className="mt-14 grid sm:grid-cols-2 md:grid-cols-3 rounded-[48px] divide-x divide-y divide-border border border-border overflow-hidden">
         {features.map((feature) => (
           <div
             key={feature.title}
             className={cn(
-              "group bg-white/1 p-6 border border-border transition-colors hover:bg-primary/1",
+              "group bg-white/1 p-6 transition-colors hover:bg-primary/1",
               feature.className,
             )}
           >
@@ -157,5 +159,5 @@ export function Features() {
         ))}
       </div>
     </section>
-  )
+  );
 }
