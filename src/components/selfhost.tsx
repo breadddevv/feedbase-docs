@@ -38,7 +38,7 @@ export function SelfHost() {
             {points.map((p) => (
               <li key={p.title} className="flex gap-4 group">
                 <span className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary group-hover:bg-primary transition-colors">
-                  <p.icon className="size-5 group-hover:text-white" />
+                  <p.icon className="size-5 group-hover:text-white transition-colors" />
                 </span>
                 <div>
                   <p className="font-medium">{p.title}</p>
