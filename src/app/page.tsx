@@ -11,12 +11,12 @@ import { useState } from "react"
 import { WaitlistModal } from "@/components/waitlist-modal"
 
 export default function Page() {
-  const [waitlistopen, setWaitlistOpen] = useState(false);
+  const [waitlistOpen, setWaitlistOpen] = useState(false);
 
   return (
     <div className="min-h-screen text-foreground">
       <main>
-        <WaitlistModal open={waitlistopen} onClose={() => setWaitlistOpen(false)}  />
+        <WaitlistModal open={waitlistOpen} onClose={() => setWaitlistOpen(false)} />
         <Hero waitlistmodal={() => setWaitlistOpen(true)} />
         <Stats />
         <Features />
